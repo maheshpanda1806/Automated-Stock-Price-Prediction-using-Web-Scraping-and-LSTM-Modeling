@@ -111,10 +111,10 @@ def train_and_save_model_db():
     print(f"Deutsche Bank (DB) model saved to {model_filename}")
 
 # Scheduling the tasks to run daily at specific times
-schedule.every().day.at("09:00").do(train_and_save_model_db)
-schedule.every().day.at("09:05").do(train_and_save_model_morgan)
-schedule.every().day.at("09:10").do(train_and_save_model_apple)
-schedule.every().day.at("09:15").do(train_and_save_model_goldman)
+schedule.every().day.at("10:00").do(train_and_save_model_db)
+schedule.every().day.at("10:05").do(train_and_save_model_morgan)
+schedule.every().day.at("10:10").do(train_and_save_model_apple)
+schedule.every().day.at("10:15").do(train_and_save_model_goldman)
 
 # Keep the script running
 while True:
